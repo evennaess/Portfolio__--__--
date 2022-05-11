@@ -10,6 +10,9 @@ html {
 
 body{
     background-color: rgb(222, 222, 222);
+  
+
+
 }
 
 header {
@@ -20,11 +23,18 @@ header {
     background-color: #000;
     z-index: 5;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content:space-between;
     border-bottom: #fff solid 2px;
-
     
+}
+
+nav {
+    
+    font-family: obviously-wide, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 22px;
 }
 
 .main-menu-desktop ul {
@@ -118,9 +128,10 @@ header {
     from {
         transform: translate(0vw, -50vh); /*0 = X-axis    -50 = Y-axis*/
     }
-    80%{
-        transform: translate(-30vh); /*viser hva som skjer frem til 80 prosent*/
-    }
+    /*80%{
+        transform: translate(-30vh); /*viser hva som skjer frem til 80 prosent
+    }*/
+
     to {
         transform: translate(0px); 
     }
@@ -132,39 +143,56 @@ header {
     
 }
 
-.container {
+.gridContainer {
+    position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: burlywood;
+    background-color: rgb(6, 6, 6);
     padding: 20px;
-    border: 5px solid #333;
-    position: relative;
-    background-image: url('../assets/Mountain.jpg');
+    border: 9px solid rgb(26, 26, 26);
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
+    display: grid;
+    grid-auto-flow:column;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+
+    gap: 1em;
+}
+.introductionHeader ul {
+    position: absolute;
+    bottom: 20%;
+    display: inline-block;
+    color: #ffffff;
+    font-size:8vw; 
+    line-height: 85%;
+    list-style: none;
+    grid-column: span 4;
+    
+    
+    font-family: obviously-wide, sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
-.container p {
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 200px;
-    left: 40px; 
-    font-size: 44px;  
+@media screen and (max-width: 768px) {
+    .introductionHeader ul {
+      display: none;
+    }
+  }
+
+
+ .introductionHeader .outlined {
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /*transparent*/
+    
 }
 
-.container span {
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 260px;
-    left: 40px; 
-    font-size: 24px;  
-}
+
+
 
 footer {
     position: fixed;
@@ -175,9 +203,12 @@ footer {
     background-color: #000;
     z-index: 5;
     border-top: #fff solid 2px;
-    
-    
-    
+}
+
+.back-to-top {
+    position: relative;
+    bottom: 0;
+    padding: 0.8rem;
 }
 
 .social-media ul{
