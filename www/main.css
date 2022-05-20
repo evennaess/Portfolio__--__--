@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     min-height: 75px;
-    height: 10vh;
+    height: 90px;
     max-height: 200px;
     width: 100%;
     color:#fff;
@@ -65,6 +65,8 @@ header {
     font-weight: 300;
     font-style: italic;
     font-size: 18px;
+    list-style: none;
+    text-decoration: none;
 }
 
 .main-menu{
@@ -339,14 +341,17 @@ main {
 
 footer {
     position: fixed;
-    
-
     bottom: 0;
-    min-height: 125px;
+    min-height: 90px;
+    max-height: 200px;
+    height: 100px;
     width: 100%;
     color:#fff;
     background-color: rgb(14, 14, 14);
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+
 
     font-family: obviously-wide, sans-serif;
     font-weight: 300;
@@ -355,9 +360,11 @@ footer {
     
 }
 
+
+
 .borderAdjustment-bottom{
     position: fixed;
-    bottom: 125px;
+    bottom: 100px;
     min-height: 2px;
     width: 85%;
     background-color: rgba(19, 19, 255, 0);
@@ -391,7 +398,7 @@ footer {
 }
 
 .day-nightElem{
-    bottom: 46px;
+    bottom:25px;
     left: 7.5%;
     position: fixed;
     z-index: 5;
