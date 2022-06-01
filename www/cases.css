@@ -105,10 +105,10 @@
     font-family: obviously-wide, sans-serif;
     font-weight: 900;
     font-style: italic;
-    font-size: 120px;
+    font-size: 7vw;
     line-height: .8;
     color: white;
-    margin-bottom: 290px;
+    margin-bottom: 32vh;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -123,7 +123,7 @@ ul.salesPitch{
 
 li#clickMe a {
     text-decoration: none;
-    font-size: 63px;
+    font-size: 3.5vw;
     color: white;
 }
 
@@ -133,6 +133,9 @@ li#clickMe a {
     .projectGrid{
         grid-template-columns: repeat(2, 1fr);
     }
+   
+  
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -140,11 +143,20 @@ li#clickMe a {
     .projectGrid{
         grid-template-columns: repeat(1, 1fr);
     }
-}
+    .salespitchEmailMe{
+        font-size: 9vw;
+    }
+    li#clickMe a {
+        text-decoration: none;
+        font-size: 5vw;
+        color: white;
+    }
+   
 
 @media screen and (max-width: 450px) {
     
-    .projectGrid{
+    .projectGrid {
         grid-template-columns: repeat(1, 1fr);
     }
+}
 }

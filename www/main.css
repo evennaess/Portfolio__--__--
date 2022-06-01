@@ -27,11 +27,12 @@ header {
     color:#fff;
     background-color: rgb(14, 14, 14);
     z-index: 3;
+    padding: 0 7.5%;
 }
 
 .cursor {
     mix-blend-mode: difference;
-    background-image: url('../assets/cursor.svg');
+    background-image: url('./assets/cursor.svg');
     width: 40px;
     height: 40px;
     border-radius:50%;
@@ -48,12 +49,13 @@ header {
 }
 
 .borderAdjustment {
-    position: fixed;
+/*    position: fixed;*/
     min-height: 2px;
-    width: 85%;
+    width: 100%;
     background-color: rgba(0, 0, 179, 0);
     border-bottom: #fff solid 2px;
-    margin-left: 7.5%;
+    z-index: 10;
+/*    margin-left: 7.5%;*/
 }
 
 .logo {
@@ -72,7 +74,7 @@ header {
 .main-menu{
     display: flex;
     justify-content: space-between;
-    padding: 0 7.5%;
+/*    padding: 0 7.5%;*/
 }
 
 .main-menu .nav-links ul {
@@ -131,13 +133,13 @@ a:hover {
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
-    background-image: url('../assets/hamburger_default.svg');
+    background-image: url('/www/assets/hamburger_default.svg');
     background-position: center; 
     /*background-color: white;*/
 }
 
 .closemobilemenu {
-    background-image: url('../assets/hamburger_close.svg');
+    background-image: url('./assets/hamburger_close.svg');
     /*background-color: red*/
 }
 
@@ -202,7 +204,7 @@ a:hover {
 
 .introductionHeader ul {
     position: absolute;
-    bottom: 18%;
+    bottom: 20%;
     display: inline-block;
     color: #ffffff;
     font-size:7vw; 
@@ -214,7 +216,7 @@ a:hover {
     font-weight: 900;
     font-style: italic;
 
-    margin-left: 6%;
+    margin-left: 6.2vw;
 }
 
 .introductionHeader:hover{
@@ -358,26 +360,29 @@ footer {
     font-style: italic;
     font-size: 18px;
     
+        padding: 0 7.5%;
+    
 }
 
 
 
 .borderAdjustment-bottom{
-    position: fixed;
-    bottom: 100px;
+    position: absolute;
+    right: 7.5%;
     min-height: 2px;
     width: 85%;
     background-color: rgba(19, 19, 255, 0);
     z-index: 1000;
     border-top: #fff solid 2px;
-    margin-left: 7.5%;
+    transform-origin: right;
 }
 
 .footerContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
-    padding: 0 7.5%;
+    justify-content: space-between;
+    padding-top: 5px; 
+/*    padding: 0 7.5%;*/
 }
 .footerContainer a {
     color: #fff;
@@ -459,7 +464,7 @@ footer {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        padding: 100px 7.5%;
+        padding: 15% 7.5%;
         background: rgb(14, 14, 14);
     }
     .nav-links .main-links{
@@ -539,7 +544,13 @@ footer {
         left: 50%;
         transform: translateX(-50%);
      }
+     .nav-links.active{
+        padding: 20% 7.5%;
     }
+    .introductionHeader ul {
+        text-align: center;
+    }
+}
 
 
 
