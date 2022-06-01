@@ -133,7 +133,7 @@ a:hover {
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
-    background-image: url('/www/assets/hamburger_default.svg');
+    background-image: url('assets/hamburger_default.svg');
     background-position: center; 
     /*background-color: white;*/
 }
