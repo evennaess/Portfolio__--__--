@@ -477,12 +477,12 @@ footer {
 
     }
     .nav-links ul{
-        padding: 50px  0px;
+        padding: 30px  0px;
         
     }
     .nav-links ul li a{
         margin-left: 0;
-        font-size: 63px;
+        font-size: 54px;
         line-height: 1.2;
         font-weight: 900;
         text-transform: uppercase;   
