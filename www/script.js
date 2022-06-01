@@ -22,7 +22,7 @@ async function getSanity() {
 
         
 }
-
+// Comment
 // THis is a comment
 
 init();
