@@ -536,7 +536,7 @@ footer {
       }
       .nav-links ul li a{
         margin-left: 0;
-        font-size: 56px;
+        font-size: 42px;
         line-height: 1.4;
         font-weight: 900;
      }
@@ -545,10 +545,11 @@ footer {
         transform: translateX(-50%);
      }
      .nav-links.active{
-        padding: 20% 7.5%;
+        padding: 15% 3%;
     }
     .introductionHeader ul {
         text-align: center;
+        padding-bottom: 10vh;
     }
 }
 
