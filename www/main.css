@@ -260,6 +260,11 @@ main {
     flex-direction: column;
   }
 
+  .projectBoxElem:link{
+      text-decoration: none;
+  }
+
+
   .projectBoxElem .projectImage{ 
     aspect-ratio: 2/1;
     border: 1px solid white;
